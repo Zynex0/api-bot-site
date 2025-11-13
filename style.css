@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: #fff;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Başlık */
+header {
+  text-align: center;
+  padding: 40px 0 20px;
+}
+header h1 {
+  font-size: 3em;
+  text-shadow: 0 0 25px #00fff2, 0 0 40px #00fff2;
+  letter-spacing: 2px;
+}
+
+/* Menü */
+.menu-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.menu-btn {
+  background: linear-gradient(90deg, #00f5a0, #00d9f5);
+  padding: 25px 50px;
+  border-radius: 25px;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #0f0f0f;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 0 25px #00fff2;
+  transition: 0.3s;
+}
+.menu-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 40px #00fff2, 0 0 80px #00fff2;
+}
+
+/* Müziği başlat butonu */
+.music-btn {
+  position: fixed;
+  top: 20px;
+  right: 25px;
+  background: linear-gradient(135deg, #ff00cc, #3333ff);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 15px #ff00cc;
+  transition: all 0.3s;
+}
+.music-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 30px #ff00cc, 0 0 60px #ff00cc;
+}
+
+/* İçerikler */
+.content {
+  display: none;
+  text-align: center;
+  padding: 40px 20px;
+  animation: fadeIn 0.6s ease forwards;
+}
+#apis {
+  display: block;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* API kutusu */
+.api-box {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255,255,255,0.3);
+  border-radius: 20px;
+  padding: 25px;
+  width: 80%;
+  max-width: 600px;
+  margin: 30px auto;
+  box-shadow: 0 0 20px rgba(0,255,255,0.3);
+  transition: 0.3s;
+}
+.api-box:hover {
+  box-shadow: 0 0 40px rgba(0,255,255,0.6);
+  transform: scale(1.03);
+}
+
+.api-box p {
+  font-size: 1.3em;
+  margin-bottom: 15px;
+}
+
+.btn-group button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.test-btn {
+  background: #00f5a0;
+  color: #000;
+}
+.copy-btn {
+  background: #00d9f5;
+  color: #000;
+}
+.test-btn:hover, .copy-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00fff2;
+}
+
+/* Telegram yönlendirme */
+.go-btn {
+  background: linear-gradient(135deg, #ff00cc, #3333ff);
+  border: none;
+  padding: 15px 35px;
+  font-size: 1.2em;
+  border-radius: 25px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 25px #ff00cc;
+}
+.go-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 40px #ff00cc, 0 0 80px #ff00cc;
+}
